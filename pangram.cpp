@@ -34,4 +34,5 @@ int main()
 		cout<<"pangram";
 	else
 		cout<<"not pangram";
-}a
+	return 0;
+}
