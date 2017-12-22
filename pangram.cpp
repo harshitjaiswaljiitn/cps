@@ -12,7 +12,7 @@ int main()
 {
 	char s[1000];
 	int a[200];
-	int c=0;
+	int flag=0;
 	for(int i=97;i<123;i++)
 		a[i]=0;
 		
@@ -28,11 +28,14 @@ int main()
 	for(int i=97;i<123;i++)
 	{
 		if(a[i]==0)
-			c++;
+		{
+			flag=1;
+			break;
+		}
 	}
-	if(c==0)
-		cout<<"pangram";
-	else
+	if(flag==1)
 		cout<<"not pangram";
+	else
+		cout<<"pangram";
 	return 0;
 }
